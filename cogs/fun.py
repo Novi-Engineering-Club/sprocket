@@ -44,6 +44,11 @@ class Fun(commands.Cog):
     async def get_quote_prefix(self, ctx):
         quote = await self.get_quote()
         await ctx.send(quote)
+    @discord.slash_command(name="quote")
+    async def get_quote_prefix(self, ctx):
+        quote = await self.get_quote()
+        await ctx.respond(quote)
+    
 
 
 def setup(bot):
