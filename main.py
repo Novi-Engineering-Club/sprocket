@@ -18,7 +18,7 @@ async def on_ready():
 async def hello(ctx: discord.ApplicationContext):
     await ctx.respond("Hey!")
 
-@bot.slash_command(name = "contact")
+@bot.slash_command(name="contact", description="Contact Novi Engineering Club")
 async def contact(ctx: discord.ApplicationContext):
     await ctx.respond("Insta: @noviengineeringig \n Email: noviengineeringig@gmail.com")
 
