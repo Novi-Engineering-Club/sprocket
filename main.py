@@ -18,13 +18,14 @@ async def on_ready():
 async def hello(ctx: discord.ApplicationContext):
     await ctx.respond("Hey!")
 
+
 @bot.slash_command(name="contact", description="Contact Novi Engineering Club")
 async def contact(ctx: discord.ApplicationContext):
     await ctx.respond("Insta: @noviengineeringig \n Email: noviengineeringig@gmail.com")
 
 
 # Load cogs
-cogs_list = ["fun"]
+cogs_list = ["fun", "admin"]
 
 for cog in cogs_list:
     bot.load_extension(f"cogs.{cog}")
