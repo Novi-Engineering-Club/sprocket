@@ -52,19 +52,19 @@ class Fun(commands.Cog):
         await ctx.respond(quote)
     
     @discord.slash_command(name="website")
-    async def website(self, ctx):
+    async def website(ctx):
         await ctx.respond("https://noviengineering.club/")
     
     @discord.slash_command(name="groupme")
-    async def groupme(self, ctx):
+    async def groupme(ctx):
         await ctx.respond("https://groupme.com/join_group/104854219/05ltImUw")
         
     @discord.slash_command(name="schoology")
-    async def groupme(self, ctx):
+    async def groupme(ctx):
         await ctx.respond("https://novi.schoology.com/group/7553052030")
         
     @discord.slash_command(name="nextmeeting")
-    async def groupme(self, ctx):
+    async def groupme(ctx):
         await ctx.respond("https://noviengineering.club/pages/meetings.html")
 
 def setup(bot):
