@@ -23,6 +23,10 @@ async def hello(ctx: discord.ApplicationContext):
 async def contact(ctx: discord.ApplicationContext):
     await ctx.respond("Insta: @noviengineeringig \n Email: noviengineeringig@gmail.com")
 
+@bot.slash_command(name="website", description="Novi Engineering Club website")
+async def contact(ctx: discord.ApplicationContext):
+    await ctx.respond("https://noviengineering.club/")
+
 
 # Load cogs
 cogs_list = ["fun", "admin"]
