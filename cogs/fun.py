@@ -50,7 +50,22 @@ class Fun(commands.Cog):
     async def get_quote_slash(self, ctx):
         quote = await self.get_quote()
         await ctx.respond(quote)
-
+    
+    @discord.slash_command(name="website")
+    async def website(self, ctx):
+        await ctx.respond("https://noviengineering.club/")
+    
+    @discord.slash_command(name="groupme")
+    async def groupme(self, ctx):
+        await ctx.respond("https://groupme.com/join_group/104854219/05ltImUw")
+        
+    @discord.slash_command(name="schoology")
+    async def groupme(self, ctx):
+        await ctx.respond("https://novi.schoology.com/group/7553052030")
+        
+    @discord.slash_command(name="nextmeeting")
+    async def groupme(self, ctx):
+        await ctx.respond("https://noviengineering.club/pages/meetings.html")
 
 def setup(bot):
     bot.add_cog(Fun(bot))
